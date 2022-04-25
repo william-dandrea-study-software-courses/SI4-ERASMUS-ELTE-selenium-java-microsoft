@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 /**
  * @author D'Andréa William
  */
@@ -15,7 +16,7 @@ public class MicrosoftPageBase {
 
     public MicrosoftPageBase(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, 10);
+        this.wait = new WebDriverWait(this.driver, 10);
     }
 
     protected WebElement waitAndReturnElement(By locator) {
