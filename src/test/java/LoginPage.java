@@ -8,8 +8,8 @@ import java.io.IOException;
  */
 public class LoginPage extends MicrosoftPageBase {
 
-    public final static String MAIL = "sqat-dandrea-william@hotmail.com";
-    public final static String PASSWORD = "dqeM?pSkgPGHtXpYDX5FD9D&aQ@!#ryNoq?3LKAe";
+    public final String MAIL = this.prop.getProperty("mail");
+    public final String PASSWORD = this.prop.getProperty("password");
 
     public LoginPage(WebDriver driver, String page) throws IOException {
         super(driver, page);

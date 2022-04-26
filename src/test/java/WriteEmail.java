@@ -11,9 +11,9 @@ import java.time.Duration;
  */
 public class WriteEmail extends MicrosoftPageBase {
 
-    private final static String DESTINATION_EMAIL = "williapile@gmail.com";
-    private final static String DESTINATION_CONTENT = "Welcome from Selenium";
-    private final static String DESTINATION_OBJECT = "Selenium Test";
+    private final String DESTINATION_EMAIL = this.prop.getProperty("DESTINATION_EMAIL");
+    private final String DESTINATION_CONTENT = this.prop.getProperty("DESTINATION_CONTENT");
+    private final String DESTINATION_OBJECT = this.prop.getProperty("DESTINATION_OBJECT");
 
 
     public WriteEmail(WebDriver driver, String page) throws IOException {
