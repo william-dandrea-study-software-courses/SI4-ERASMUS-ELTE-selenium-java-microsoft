@@ -26,8 +26,12 @@ public class OutlookPage extends MicrosoftPageBase {
         }
     }
 
-    public WriteEmail goToNewEmail() throws IOException {
-        this.waitAndReturnElement(By.xpath("//*[@id=\"id__6\"]")).click();
+    public WriteEmail goToNewEmail() throws IOException, InterruptedException {
+
+
+
+
+        this.waitAndReturnElement(By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div[1]/div/div/div/div/div/div[1]/div[1]/div/div/button")).click();
 
         return new WriteEmail(driver, page);
     }
